@@ -1,0 +1,31 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+.cd-schedule {
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+.cd-schedule article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+.cd-schedule {
+	line-height: 1;
+}
+.cd-schedule ol, ul {
+	list-style: none;
+}
+.cd-schedule blockquote, q {
+	quotes: none;
+}
+.cd-schedule blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+.cd-schedule table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

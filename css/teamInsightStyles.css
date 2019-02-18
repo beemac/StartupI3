@@ -1,0 +1,100 @@
+/*dojo resets */
+.dijitContentPane{overflow:visible !important;/*position:absolute !important;*/} /* Used on views to push scroll bar to bottom of window */
+
+/* overrides start */
+.col-md-3 {
+    width: 22% !important;
+    padding-bottom: 2em;
+}
+
+/* overrides end */
+
+
+span.twitter-typeahead .tt-noselect {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.nowrap{
+	white-space: nowrap;
+	}
+
+.hide{
+    display:none !important;
+    }
+
+#psearchTable tbody tr td{
+    white-space: nowrap;
+}
+
+#searchCriteriaSection{
+    margin-bottom: 2em;
+}
+
+.searchInputSection{
+    float: left;
+    padding: 20px;
+}
+
+.searchInputSection .form-inline{
+    width: 165px;
+}
+
+.submitContainer{
+    padding-left: 1.70em;
+    width: 200px;
+}
+
+.centered {
+    text-align:center;
+}
+
+.smallColumn{
+    width:75px;
+    white-space: nowrap;
+}
+
+.mediumColumn{
+    width:150px;
+    white-space: nowrap;
+}
+
+.xsmallColumn{
+    width: 30px;
+    white-space: nowrap;
+}
+
+.row-highlight {
+	background-color: lightblue !important
+}
+
+.profilePic{
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+.auditRecord{
+     padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.auditINSERT{
+    color:#5cb85c;
+}
+
+.auditDELETE{
+    color:#d9534f;
+}
+
+.auditUPDATE{
+    color:#f0ad4e;
+}

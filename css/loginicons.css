@@ -1,0 +1,176 @@
+.iconrow{
+	display:block;
+	top:220px;
+	width:650px;
+}
+
+li[id*='rowicon']{
+	opacity:1;
+	cursor:default;
+	list-style-type: none; 
+	text-align:center;
+	overflow:hidden;
+	width:100px;
+	height:120px;
+	float:left;
+	text-decoration:none;
+	border-top-left-radius:15px;
+	border-bottom-right-radius:15px;
+	-moz-border-top-left-radius:15px;
+	-moz-border-bottom-right-radius:15px;
+	-moz-box-shadow:3px 2px #888;
+	box-shadow:3px 2px #888;
+	margin-bottom:10%;	
+}
+
+li.active { opacity:1;}
+
+
+#rowicon-1{
+	padding-top:5px;
+	color:#fff;
+	background-position:center;
+background-repeat:no-repeat;
+background-image:url(/score/ui/custom/images/icon-lock.png), rgb(64,134,160); /* Old browsers */
+background-image:url(/score/ui/custom/images/icon-lock.png), -moz-linear-gradient(top, rgba(64,134,160,1) 0%, rgba(227,242,247,1) 50%, rgba(227,242,247,1) 51%, rgba(83,160,188,1) 100%); /* FF3.6+ */
+background-image:url(/score/ui/custom/images/icon-lock.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,134,160,1)), color-stop(50%,rgba(227,242,247,1)), color-stop(51%,rgba(227,242,247,1)), color-stop(100%,rgba(83,160,188,1))); /* Chrome,Safari4+ */
+background-image:url(/score/ui/custom/images/icon-lock.png), -webkit-linear-gradient(top, rgba(64,134,160,1) 0%,rgba(227,242,247,1) 50%,rgba(227,242,247,1) 51%,rgba(83,160,188,1) 100%); /* Chrome10+,Safari5.1+ */
+background-image:url(/score/ui/custom/images/icon-lock.png), -o-linear-gradient(top, rgba(64,134,160,1) 0%,rgba(227,242,247,1) 50%,rgba(227,242,247,1) 51%,rgba(83,160,188,1) 100%); /* Opera 11.10+ */
+background-image:url(/score/ui/custom/images/icon-lock.png), -ms-linear-gradient(top, rgba(64,134,160,1) 0%,rgba(227,242,247,1) 50%,rgba(227,242,247,1) 51%,rgba(83,160,188,1) 100%); /* IE10+ */
+background-image:url(/score/ui/custom/images/icon-lock.png), linear-gradient(top, rgba(64,134,160,1) 0%,rgba(227,242,247,1) 50%,rgba(227,242,247,1) 51%,rgba(83,160,188,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4086a0', endColorstr='#53a0bc',GradientType=0 ); /* IE6-9 */
+background-repeat:no-repeat;
+	}
+	
+
+#rowicon-2{
+	margin-left:10px;
+	padding-top:5px;
+	color:#fff;
+	background-position:center;
+background-image:url(/score/ui/custom/images/icon-reports.png), rgb(67,120,211); /* Old browsers */
+background-image:url(/score/ui/custom/images/icon-reports.png), -moz-linear-gradient(top, rgba(67,120,211,1) 0%, rgba(209,225,249,1) 50%, rgba(209,225,249,1) 55%, rgba(93,147,234,1) 100%); /* FF3.6+ */
+background-image:url(/score/ui/custom/images/icon-reports.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(67,120,211,1)), color-stop(50%,rgba(209,225,249,1)), color-stop(55%,rgba(209,225,249,1)), color-stop(100%,rgba(93,147,234,1))); /* Chrome,Safari4+ */
+background-image:url(/score/ui/custom/images/icon-reports.png), -webkit-linear-gradient(top, rgba(67,120,211,1) 0%,rgba(209,225,249,1) 50%,rgba(209,225,249,1) 55%,rgba(93,147,234,1) 100%); /* Chrome10+,Safari5.1+ */
+background-image:url(/score/ui/custom/images/icon-reports.png), -o-linear-gradient(top, rgba(67,120,211,1) 0%,rgba(209,225,249,1) 50%,rgba(209,225,249,1) 55%,rgba(93,147,234,1) 100%); /* Opera 11.10+ */
+background-image:url(/score/ui/custom/images/icon-reports.png), -ms-linear-gradient(top, rgba(67,120,211,1) 0%,rgba(209,225,249,1) 50%,rgba(209,225,249,1) 55%,rgba(93,147,234,1) 100%); /* IE10+ */
+background-image:url(/score/ui/custom/images/icon-reports.png), linear-gradient(top, rgba(67,120,211,1) 0%,rgba(209,225,249,1) 50%,rgba(209,225,249,1) 55%,rgba(93,147,234,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4378d3', endColorstr='#5d93ea',GradientType=0 ); /* IE6-9 */
+background-repeat:no-repeat;
+	}
+	
+#rowicon-3{
+	margin-left:10px;
+	padding-top:5px;
+	color:#fff;
+	background-position:center;
+background-image:url(/score/ui/custom/images/icon-inventory.png), rgb(124,37,16); /* Old browsers */
+background-image:url(/score/ui/custom/images/icon-inventory.png), -moz-linear-gradient(top, rgba(124,37,16,1) 0%, rgba(239,222,210,1) 50%, rgba(239,222,210,1) 51%, rgba(188,83,45,1) 100%); /* FF3.6+ */
+background-image:url(/score/ui/custom/images/icon-inventory.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(124,37,16,1)), color-stop(50%,rgba(239,222,210,1)), color-stop(51%,rgba(239,222,210,1)), color-stop(100%,rgba(188,83,45,1))); /* Chrome,Safari4+ */
+background-image:url(/score/ui/custom/images/icon-inventory.png), -webkit-linear-gradient(top, rgba(124,37,16,1) 0%,rgba(239,222,210,1) 50%,rgba(239,222,210,1) 51%,rgba(188,83,45,1) 100%); /* Chrome10+,Safari5.1+ */
+background-image:url(/score/ui/custom/images/icon-inventory.png), -o-linear-gradient(top, rgba(124,37,16,1) 0%,rgba(239,222,210,1) 50%,rgba(239,222,210,1) 51%,rgba(188,83,45,1) 100%); /* Opera 11.10+ */
+background-image:url(/score/ui/custom/images/icon-inventory.png), -ms-linear-gradient(top, rgba(124,37,16,1) 0%,rgba(239,222,210,1) 50%,rgba(239,222,210,1) 51%,rgba(188,83,45,1) 100%); /* IE10+ */
+background-image:url(/score/ui/custom/images/icon-inventory.png), linear-gradient(top, rgba(124,37,16,1) 0%,rgba(239,222,210,1) 50%,rgba(239,222,210,1) 51%,rgba(188,83,45,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c2510', endColorstr='#bc532d',GradientType=0 ); /* IE6-9 */
+background-repeat:no-repeat;
+	}
+	
+#rowicon-4{
+	margin-left:10px;
+	padding-top:5px;
+	color:#fff;
+	background-position:center;
+background-image:url(/score/ui/custom/images/icon-virtual.png), rgb(88,107,72); /* Old browsers */
+background-image:url(/score/ui/custom/images/icon-virtual.png), -moz-linear-gradient(top, rgba(88,107,72,1) 0%, rgba(227,242,215,1) 50%, rgba(227,242,215,1) 51%, rgba(138,191,95,1) 100%); /* FF3.6+ */
+background-image:url(/score/ui/custom/images/icon-virtual.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,107,72,1)), color-stop(50%,rgba(227,242,215,1)), color-stop(51%,rgba(227,242,215,1)), color-stop(100%,rgba(138,191,95,1))); /* Chrome,Safari4+ */
+background-image:url(/score/ui/custom/images/icon-virtual.png), -webkit-linear-gradient(top, rgba(88,107,72,1) 0%,rgba(227,242,215,1) 50%,rgba(227,242,215,1) 51%,rgba(138,191,95,1) 100%); /* Chrome10+,Safari5.1+ */
+background-image:url(/score/ui/custom/images/icon-virtual.png), -o-linear-gradient(top, rgba(88,107,72,1) 0%,rgba(227,242,215,1) 50%,rgba(227,242,215,1) 51%,rgba(138,191,95,1) 100%); /* Opera 11.10+ */
+background-image:url(/score/ui/custom/images/icon-virtual.png), -ms-linear-gradient(top, rgba(88,107,72,1) 0%,rgba(227,242,215,1) 50%,rgba(227,242,215,1) 51%,rgba(138,191,95,1) 100%); /* IE10+ */
+background-image:url(/score/ui/custom/images/icon-virtual.png), linear-gradient(top, rgba(88,107,72,1) 0%,rgba(227,242,215,1) 50%,rgba(227,242,215,1) 51%,rgba(138,191,95,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#586b48', endColorstr='#8abf5f',GradientType=0 ); /* IE6-9 */
+background-repeat:no-repeat;
+	}
+	
+#rowicon-5{
+	margin-left:10px;
+	padding-top:5px;
+	color:#fff;
+	background-position:center;
+background-image:url(/score/ui/custom/images/icon-capacity.png), rgb(96,89,83); /* Old browsers */
+background-image:url(/score/ui/custom/images/icon-capacity.png), -moz-linear-gradient(top, rgba(96,89,83,1) 0%, rgba(224,218,213,1) 50%, rgba(224,218,213,1) 51%, rgba(147,139,133,1) 100%); /* FF3.6+ */
+background-image:url(/score/ui/custom/images/icon-capacity.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(96,89,83,1)), color-stop(50%,rgba(224,218,213,1)), color-stop(51%,rgba(224,218,213,1)), color-stop(100%,rgba(147,139,133,1))); /* Chrome,Safari4+ */
+background-image:url(/score/ui/custom/images/icon-capacity.png), -webkit-linear-gradient(top, rgba(96,89,83,1) 0%,rgba(224,218,213,1) 50%,rgba(224,218,213,1) 51%,rgba(147,139,133,1) 100%); /* Chrome10+,Safari5.1+ */
+background-image:url(/score/ui/custom/images/icon-capacity.png), -o-linear-gradient(top, rgba(96,89,83,1) 0%,rgba(224,218,213,1) 50%,rgba(224,218,213,1) 51%,rgba(147,139,133,1) 100%); /* Opera 11.10+ */
+background-image:url(/score/ui/custom/images/icon-capacity.png), -ms-linear-gradient(top, rgba(96,89,83,1) 0%,rgba(224,218,213,1) 50%,rgba(224,218,213,1) 51%,rgba(147,139,133,1) 100%); /* IE10+ */
+background-image:url(/score/ui/custom/images/icon-capacity.png), linear-gradient(top, rgba(96,89,83,1) 0%,rgba(224,218,213,1) 50%,rgba(224,218,213,1) 51%,rgba(147,139,133,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#605953', endColorstr='#938b85',GradientType=0 ); /* IE6-9 */
+background-repeat:no-repeat;
+	}
+	
+	
+#rowicon-6{
+	margin-left:10px;
+	padding-top:5px;
+	color:#fff;
+	background-position:center;
+background-image:url(/score/ui/custom/images/icon-utilize.png), rgb(188,112,50); /* Old browsers */
+background-image:url(/score/ui/custom/images/icon-utilize.png), -moz-linear-gradient(top, rgba(188,112,50,1) 0%, rgba(247,224,205,1) 50%, rgba(247,224,205,1) 51%, rgba(242,147,64,1) 100%); /* FF3.6+ */
+background-image:url(/score/ui/custom/images/icon-utilize.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(188,112,50,1)), color-stop(50%,rgba(247,224,205,1)), color-stop(51%,rgba(247,224,205,1)), color-stop(100%,rgba(242,147,64,1))); /* Chrome,Safari4+ */
+background-image:url(/score/ui/custom/images/icon-utilize.png), -webkit-linear-gradient(top, rgba(188,112,50,1) 0%,rgba(247,224,205,1) 50%,rgba(247,224,205,1) 51%,rgba(242,147,64,1) 100%); /* Chrome10+,Safari5.1+ */
+background-image:url(/score/ui/custom/images/icon-utilize.png), -o-linear-gradient(top, rgba(188,112,50,1) 0%,rgba(247,224,205,1) 50%,rgba(247,224,205,1) 51%,rgba(242,147,64,1) 100%); /* Opera 11.10+ */
+background-image:url(/score/ui/custom/images/icon-utilize.png), -ms-linear-gradient(top, rgba(188,112,50,1) 0%,rgba(247,224,205,1) 50%,rgba(247,224,205,1) 51%,rgba(242,147,64,1) 100%); /* IE10+ */
+background-image:url(/score/ui/custom/images/icon-utilize.png), linear-gradient(top, rgba(188,112,50,1) 0%,rgba(247,224,205,1) 50%,rgba(247,224,205,1) 51%,rgba(242,147,64,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc7032', endColorstr='#f29340',GradientType=0 ); /* IE6-9 */
+background-repeat:no-repeat;
+	}
+	
+
+#rowicon-7{
+	margin-left:10px;
+	padding-top:5px;
+	color:#fff;
+	background-position:center;
+background-image:url(/score/ui/custom/images/icon-info.png), rgb(170,169,169); /* Old browsers */
+background-image:url(/score/ui/custom/images/icon-info.png), -moz-linear-gradient(top, rgba(170,169,169,1) 0%, rgba(226,226,226,1) 46%, rgba(254,254,254,1) 52%, rgba(198,198,198,1) 99%); /* FF3.6+ */
+background-image:url(/score/ui/custom/images/icon-info.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(170,169,169,1)), color-stop(46%,rgba(226,226,226,1)), color-stop(52%,rgba(254,254,254,1)), color-stop(99%,rgba(198,198,198,1))); /* Chrome,Safari4+ */
+background-image:url(/score/ui/custom/images/icon-info.png), -webkit-linear-gradient(top, rgba(170,169,169,1) 0%,rgba(226,226,226,1) 46%,rgba(254,254,254,1) 52%,rgba(198,198,198,1) 99%); /* Chrome10+,Safari5.1+ */
+background-image:url(/score/ui/custom/images/icon-info.png), -o-linear-gradient(top, rgba(170,169,169,1) 0%,rgba(226,226,226,1) 46%,rgba(254,254,254,1) 52%,rgba(198,198,198,1) 99%); /* Opera 11.10+ */
+background-image:url(/score/ui/custom/images/icon-info.png), -ms-linear-gradient(top, rgba(170,169,169,1) 0%,rgba(226,226,226,1) 46%,rgba(254,254,254,1) 52%,rgba(198,198,198,1) 99%); /* IE10+ */
+background-image:url(/score/ui/custom/images/icon-info.png), linear-gradient(top, rgba(170,169,169,1) 0%,rgba(226,226,226,1) 46%,rgba(254,254,254,1) 52%,rgba(198,198,198,1) 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaa9a9', endColorstr='#c6c6c6',GradientType=0 ); /* IE6-9 */
+background-repeat:no-repeat;
+	}
+	
+.icon-showinfo{
+	position:absolute;
+	top:110px;
+	width:550px;
+	height:160px;
+	background-color:#363636;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	}
+	
+	
+#icondesc-1,#icondesc-2,#icondesc-3,#icondesc-4,#icondesc-5,#icondesc-6,#icondesc-7{
+	position:absolute;
+	margin-left:20px;
+	top:300px;
+	width:530px;
+	color:#FFF;
+	height:50px;
+	opacity:0;
+	z-index:25;
+}
+
+ 
+    .tooltip {
+    display:none;
+    background:transparent url(/score/ui/custom/images/black_arrow_btm.png);
+	text-align:start
+    font-size:12px;
+    height:150px;
+    width:300px;
+    padding:25px;
+    color:#eee;
+  }
