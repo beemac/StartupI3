@@ -3,63 +3,40 @@
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
 
-<link rel="stylesheet" type="text/css" href="/css/claro.css">
-<link rel="stylesheet" type="text/css" href="/css/score.min.css">
-<link rel="stylesheet" type="text/css" href="/css/chosen.css">
+<link rel="stylesheet" type="text/css" href="http://innovation.epizy.com/css/claro.css">
+<link rel="stylesheet" type="text/css" href="http://innovation.epizy.com/css/score.min.css">
+<link rel="stylesheet" type="text/css" href="http://innovation.epizy.com/css/chosen.css">
 
-<script type="text/javascript" src="/js/dojo.js" djconfig="parseOnLoad:true"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/dojo.js" djconfig="parseOnLoad:true"></script>
 </head>
 <body>
 
 <?php
-    if( getenv( "VCAP_SERVICES" ) )
-    {
-        # Get database details from the VCAP_SERVICES environment variable
-        #
-        # *This can only work if you have used the Bluemix dashboard to
-        # create a connection from your dashDB service to your PHP App.
-        #
-        $details  = json_decode( getenv( "VCAP_SERVICES" ), true );
-        $dsn      = $details [ "dashDB For Transactions" ][0][ "credentials" ][ "dsn" ];
-        $ssl_dsn  = $details [ "dashDB For Transactions" ][0][ "credentials" ][ "ssldsn" ];
-        
-        # Build the connection string
-        #
-        $driver = "DRIVER={IBM DB2 ODBC DRIVER};";
-        $conn_string = $driver . $dsn;     # Non-SSL
-        $conn_string = $driver . $ssl_dsn; # SSL
-        
-        echo $conn_string;
-        
-        $conn = db2_connect( $conn_string, "", "" );
-        if( $conn )
-        {
-            echo "<p>Connection succeeded.</p>";
-            db2_close( $conn );
-        }
-        else
-        {
-            echo "<p>Connection failed.</p>";
-        }
+    $servername = "sql303.epizy.com";
+    $username = "epiz_23317245";
+    $password = "aHjxEeldtkYIFG";
+    $dbName = "epiz_23317245_startup";
+    
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbName);
+    
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
-    else
-    {
-        echo "<p>No credentials.</p>";
-    }
-    ?>
+?>
 
 <textarea id="dijit._editor.RichText.value" style="display:none;position:absolute;top:-100px;left:-100px;height:3px;width:3px;overflow:hidden;"></textarea>
 
-<script type="text/javascript" src="/js/score.min.js"></script>
-<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/validator.js"></script>
-<script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
-<script type="text/javascript" src="/js/jquery.fastLiveFilter.js"></script>
-<script type="text/javascript" src="/js/form2js.js"></script>
-<script type="text/javascript" src="/js/typeahead.js"></script>
-<script type="text/javascript" src="/js/facestypeahead-0.4.4.min.js"></script>
-<script type="text/javascript" src="/js/chosen.jquery.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/score.min.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/validator.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/jquery.fastLiveFilter.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/form2js.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/typeahead.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/facestypeahead-0.4.4.min.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/chosen.jquery.js"></script>
 
 <style>
 .nav-link {
@@ -125,7 +102,7 @@ padding: 7px;
     <div id="siteMessage"></div>
     </div>
     <div id="content" data-dojo-type="dojox.layout.ContentPane" style="padding-top: 40px; overflow: visible !important" class="dijitContentPane" title="" role="group" widgetid="content"><main role="main" class="container" style="padding-left: 0; margin-left:0px; max-width:100%; padding-right:0;">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://innovation.epizy.com/css/font-awesome.min.css">
     <style>
     table {
         font-size: 15px;
@@ -224,11 +201,11 @@ Tip: Press Ctrl+F (command+F on mac) to search.
 <label for="bu-filter" class="filter-cat">Technology</label>
 <select id="bu-filter" name="bu-filter" class="form-control filter ind" data-placeholder=" " multiple="" style="display: none;">
 <?php
-    $sql = "SELECT DISTINCT 'TECHNOLOGY' FROM PJW17276.STARTUPDB WHERE 'INCLUDE' <> 0;";
-    $result = db2_execute($conn, $sql);
+    $sql = "SELECT DISTINCT `Technology` FROM `Sheet1` WHERE `Technology` IS NOT NULL AND `Include`<> 0 ORDER BY `Technology`";
+    $result = $conn->query($sql);
     
-    while ($row = db2_fetch_assoc($result)) {
-        echo '<option value="'.$row['TECHNOLOGY'].'">'.$row['TECHNOLOGY'].'</option>';
+    while ($row = $result->fetch_assoc()) {
+        echo '<option value="'.$row['Technology'].'">'.$row['Technology'].'</option>';
     }
     ?>
 </select>
@@ -238,11 +215,11 @@ Tip: Press Ctrl+F (command+F on mac) to search.
 <label for="ind-exp-filter" class="filter-cat">Industry</label>
 <select id="ind-exp-filter" name="ind-exp-filter" class="form-control filter ind" data-placeholder=" " multiple="" style="display: none;">
 <?php
-    $sql = "SELECT DISTINCT 'INDUSTRY_TYPE' FROM PJW17276.STARTUPDB WHERE 'INCLUDE' <> 0;";
-    $result = db2_execute($conn, $sql);
+    $sql = "SELECT DISTINCT `Industry.Type` FROM `Sheet1` WHERE `Industry.Type` IS NOT NULL AND `Include`<> 0 ORDER BY `Industry.Type`";
+    $result = $conn->query($sql);
     
-    while ($row = db2_fetch_assoc($result)) {
-        echo '<option value="'.$row['INDUSTRY_TYPE'].'">'.$row['INDUSTRY_TYPE'].'</option>';
+    while ($row = $result->fetch_assoc()) {
+        echo '<option value="'.$row['Industry.Type'].'">'.$row['Industry.Type'].'</option>';
     }
     ?>
 </select>
@@ -252,11 +229,11 @@ Tip: Press Ctrl+F (command+F on mac) to search.
 <label for="loc-filter" class="filter-cat">Location</label>
 <select id="loc-filter" name="loc-filter" class="form-control filter ind" data-placeholder=" " multiple="" style="display: none;">
 <?php
-    $sql = "SELECT DISTINCT 'BILLING_PROVINCE' FROM PJW17276.STARTUPDB WHERE 'INCLUDE' <> 0;";
-    $result = db2_execute($conn, $sql);
+    $sql = "SELECT DISTINCT `Billing.Province` FROM `Sheet1` WHERE `Billing.Province` IS NOT NULL AND `Include`<> 0 ORDER BY `Billing.Province`";
+    $result = $conn->query($sql);
     
-    while ($row = db2_fetch_assoc($result)) {
-        echo '<option value="'.$row['BILLING_PROVINCE'].'">'.$row['BILLING_PROVINCE'].'</option>';
+    while ($row = $result->fetch_assoc()) {
+        echo '<option value="'.$row['Billing.Province'].'">'.$row['Billing.Province'].'</option>';
     }
     ?>
 </select>
@@ -264,35 +241,39 @@ Tip: Press Ctrl+F (command+F on mac) to search.
 </div>
 
 <?php
-    $sql = "SELECT * FROM PJW17276.STARTUPDB WHERE 'INCLUDE' <> 0;";
-    $result = db2_execute($conn, $sql);
+    $sql = "SELECT * FROM `Sheet1` WHERE `Include` <> 0 ORDER BY `Include`, `Account.Name`";
+    $result = $conn->query($sql);
     
-    while ($row = db2_fetch_assoc($result)) {
-        echo '<div class="media '.$row['BILLING_PROVINCE'].' '.$row['TECHNOLOGY'].' '.$row['INDUSTRY_TYPE'].' '.$row['BILLING_PROVINCE'].'">';
+    while ($row = $result->fetch_assoc()) {
+        echo '<div class="media '.$row['Billing.Province'].' '.$row['Technology'].' '.$row['Industry.Type'].' '.$row['Billing.Province'].'">';
         echo '  <div class="align-self-start mr-3">';
-        echo '      <img alt="'.$row['ACCOUNT_NAME'].'" src="'.$row['LOGO_URL'].'" onerror="this.onerror=null; this.src="'.$row['DOMAIN_URL'].'";" width="125">';
+        echo '      <img alt="'.$row['Account.Name'].'" src=http://innovation.epizy.com'.$row['logo.URL'].' onerror="this.onerror=null; this.src="'.$row['domain.URL'].'";" width="125">';
         
         echo '  </div>';
         echo '  <div class="media-body mt-0">';
         echo '      <h4 class="name">';
-        echo '          <a target="_blank" href="'.$row['DOMAIN_URL'].'">';
-        echo '              <b>'.$row['ACCOUNT_NAME'].'</b>';
+        echo '          <a target="_blank" href="'.$row['domain.URL'].'">';
+        echo '              <b>'.$row['Account.Name'].'</b>';
         echo '          </a>';
         echo '      </h4>';
-        echo '      <h5 class="title">'.$row['INDUSTRY_TYPE'].'</h5>';
+        echo '      <h5 class="title">'.$row['Industry.Type'].'</h5>';
         echo '      <div class="bus-loc">';
         echo '          <span class="bu-loc">';
-        echo '              '.$row['BILLING_CITY'].', '.$row['BILLING_PROVINCE'];
+        echo '              '.$row['Billing.City'].', '.$row['Billing.Province'];
         echo '          </span>';
         echo '      </div>';
         echo '      <hr>';
         echo '      <div class="focus">';
         echo '          <div class="label">Description: </div>';
-        echo '          <div class="multi-line">'.$row['COMPANY_DESCRIPTION'].'</div>';
+        echo '          <div class="multi-line">'.$row['Company.Description'].'</div>';
+        echo '      </div>';
+        echo '      <div class="ibmtech">';
+        echo '          <div class="label">IBM Technology: </div>';
+        echo '          <div class="multi-line">'.$row['Technology'].'</div>';
         echo '      </div>';
         echo '      <div class="techexpertise">';
         echo '          <div class="label">IBM Contact: </div>';
-        echo '          <div class="multi-line">'.$row['IBM_CONTACT'].', '.$row['IBM_EMAIL'].', '.$row['IBM_PHONE'].'</div>';
+        echo '          <div class="multi-line">'.$row['IBM.Contact'].', '.$row['IBM.email'].', '.$row['IBM.phone'].'</div>';
         echo '      </div>';
         echo '  </div>';
         echo '</div>';
@@ -395,8 +376,8 @@ $('.filter').change(function() {
 
 </script></div>
 
-<script type="text/javascript" src="/js/datatables.min.js"></script>
-<script type="text/javascript" src="/js/dataTables.bootstrap4.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/datatables.min.js"></script>
+<script type="text/javascript" src="http://innovation.epizy.com/js/dataTables.bootstrap4.js"></script>
 <script>
 dojo.ready(function(){
            

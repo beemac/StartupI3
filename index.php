@@ -1737,7 +1737,7 @@ outline: 2px dotted #757575;
                                                                                                                                                                                                                       
                                                                                     
                                                                                                                                                                                                                       
-                                                                                    <iframe src="/index2.html">Alternate content</iframe>
+                                                                                    <iframe src="http://innovation.epizy.com/index2.php">Alternate content</iframe>
                                                                                                                                                                                                     
                                                                                                                                                                                                                       
                                                                                                                                                                                                                       </div></article> <!----> </div>
