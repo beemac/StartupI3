@@ -1,13 +1,13 @@
 <html class="dj_gecko dj_contentbox"><head>
 <title>ICG - StartUps and ScaleUps</title>
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
-<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="https://ccca.a14.can.ibm.com/canlab/img/favicon.ico">
 
-<link rel="stylesheet" type="text/css" href="http://innovation.epizy.com/css/claro.css">
-<link rel="stylesheet" type="text/css" href="http://innovation.epizy.com/css/score.min.css">
-<link rel="stylesheet" type="text/css" href="http://innovation.epizy.com/css/chosen.css">
+<link rel="stylesheet" type="text/css" href="https://ccca.a14.can.ibm.com/canlab/css/claro.css">
+<link rel="stylesheet" type="text/css" href="https://ccca.a14.can.ibm.com/canlab/css/score.min.css">
+<link rel="stylesheet" type="text/css" href="https://ccca.a14.can.ibm.com/canlab/css/chosen.css">
 
-<script type="text/javascript" src="http://innovation.epizy.com/js/dojo.js" djconfig="parseOnLoad:true"></script>
+<script type="text/javascript" src="https://ccca.a14.can.ibm.com/canlab/js/dojo.js" djconfig="parseOnLoad:true"></script>
 </head>
 <body>
 
@@ -27,16 +27,16 @@
 
 <textarea id="dijit._editor.RichText.value" style="display:none;position:absolute;top:-100px;left:-100px;height:3px;width:3px;overflow:hidden;"></textarea>
 
-<script type="text/javascript" src="http://innovation.epizy.com/js/score.min.js"></script>
-<script type="text/javascript" src="http://innovation.epizy.com/js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="http://innovation.epizy.com/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://innovation.epizy.com/js/validator.js"></script>
-<script type="text/javascript" src="http://innovation.epizy.com/js/jquery.tablesorter.js"></script>
-<script type="text/javascript" src="http://innovation.epizy.com/js/jquery.fastLiveFilter.js"></script>
-<script type="text/javascript" src="http://innovation.epizy.com/js/form2js.js"></script>
-<script type="text/javascript" src="http://innovation.epizy.com/js/typeahead.js"></script>
-<script type="text/javascript" src="http://innovation.epizy.com/js/facestypeahead-0.4.4.min.js"></script>
-<script type="text/javascript" src="http://innovation.epizy.com/js/chosen.jquery.js"></script>
+<script type="text/javascript" src="https://ccca.a14.can.ibm.com/canlab/js/score.min.js"></script>
+<script type="text/javascript" src="https://ccca.a14.can.ibm.com/canlab/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://ccca.a14.can.ibm.com/canlab/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ccca.a14.can.ibm.com/canlab/js/validator.js"></script>
+<script type="text/javascript" src="https://ccca.a14.can.ibm.com/canlab/js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="https://ccca.a14.can.ibm.com/canlab/js/jquery.fastLiveFilter.js"></script>
+<script type="text/javascript" src="https://ccca.a14.can.ibm.com/canlab/js/form2js.js"></script>
+<script type="text/javascript" src="https://ccca.a14.can.ibm.com/canlab/js/typeahead.js"></script>
+<script type="text/javascript" src="https://ccca.a14.can.ibm.com/canlab/js/facestypeahead-0.4.4.min.js"></script>
+<script type="text/javascript" src="https://ccca.a14.can.ibm.com/canlab/js/chosen.jquery.js"></script>
 
 <style>
 .nav-link {
@@ -102,7 +102,7 @@ padding: 7px;
     <div id="siteMessage"></div>
     </div>
     <div id="content" data-dojo-type="dojox.layout.ContentPane" style="padding-top: 40px; overflow: visible !important" class="dijitContentPane" title="" role="group" widgetid="content"><main role="main" class="container" style="padding-left: 0; margin-left:0px; max-width:100%; padding-right:0;">
-    <link rel="stylesheet" href="http://innovation.epizy.com/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ccca.a14.can.ibm.com/canlab/css/font-awesome.min.css">
     <style>
     table {
         font-size: 15px;
@@ -192,6 +192,13 @@ display: flex;
 
 <div class="container">
 
+<h4><center><b>Leverage Start-ups For Your Deals and With Your Clients.</b></center> </h4>
+<p class="ds-align-text-center">Find start-up company solutions, built on IBM technology, operating in your client's industry. Each start-up has been vetted by our Innovation Team to be non-competitive to IBM offerings and IBM partners. Contact the IBM Canada representative listed to start your client’s journey with the IBM Canada Innovation Ecosystem.</p>
+
+<div class="tool-tip" width="100%" style="font-size: 1.2em;font-weight: 500;padding-left: 15px;">
+Note: If you are working with a start-up that isn’t on this list, please contact Bon McLean at brmclean@ca.ibm.com.
+</div>
+
 <div class="tool-tip" width="100%" style="font-size: 1.2em;font-weight: 500;padding-left: 15px;">
 Tip: Press Ctrl+F (command+F on mac) to search.
 </div>
@@ -247,7 +254,7 @@ Tip: Press Ctrl+F (command+F on mac) to search.
     while ($row = $result->fetch_assoc()) {
         echo '<div class="media '.$row['Billing.Province'].' '.$row['Technology'].' '.$row['Industry.Type'].' '.$row['Billing.Province'].'">';
         echo '  <div class="align-self-start mr-3">';
-        echo '      <img alt="'.$row['Account.Name'].'" src=http://innovation.epizy.com'.$row['logo.URL'].' onerror="this.onerror=null; this.src="'.$row['domain.URL'].'";" width="125">';
+        echo '      <img alt="'.$row['Account.Name'].'" src=https://ccca.a14.can.ibm.com/canlab'.$row['logo.URL'].' onerror="this.onerror=null; this.src="'.$row['domain.URL'].'";" width="125">';
         
         echo '  </div>';
         echo '  <div class="media-body mt-0">';
@@ -376,8 +383,8 @@ $('.filter').change(function() {
 
 </script></div>
 
-<script type="text/javascript" src="http://innovation.epizy.com/js/datatables.min.js"></script>
-<script type="text/javascript" src="http://innovation.epizy.com/js/dataTables.bootstrap4.js"></script>
+<script type="text/javascript" src="/js/datatables.min.js"></script>
+<script type="text/javascript" src="/js/dataTables.bootstrap4.js"></script>
 <script>
 dojo.ready(function(){
            

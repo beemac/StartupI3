@@ -1737,7 +1737,7 @@ outline: 2px dotted #757575;
                                                                                                                                                                                                                       
                                                                                     
                                                                                                                                                                                                                       
-                                                                                    <iframe src="http://innovation.epizy.com/index2.php">Alternate content</iframe>
+                                                                                    <iframe src="https://ccca.a14.can.ibm.com/canlab/index2.php">Alternate content</iframe>
                                                                                                                                                                                                     
                                                                                                                                                                                                                       
                                                                                                                                                                                                                       </div></article> <!----> </div>
