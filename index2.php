@@ -196,7 +196,7 @@ display: flex;
 <p class="ds-align-text-center">Find start-up company solutions, built on IBM technology, operating in your client's industry. Each start-up has been vetted by our Innovation Team to be non-competitive to IBM offerings and IBM partners. Contact the IBM Canada representative listed to start your client’s journey with the IBM Canada Innovation Ecosystem.</p>
 
 <div class="tool-tip" width="100%" style="font-size: 1.2em;font-weight: 500;padding-left: 15px;">
-Note: If you are working with a start-up that isn’t on this list, please contact Bon McLean at brmclean@ca.ibm.com.
+Note: Please contact Bon McLean at brmclean@ca.ibm.com for general questions about this database.
 </div>
 
 <div class="tool-tip" width="100%" style="font-size: 1.2em;font-weight: 500;padding-left: 15px;">
